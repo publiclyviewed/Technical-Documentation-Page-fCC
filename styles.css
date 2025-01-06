@@ -16,9 +16,15 @@ body {
 
 
 #navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
   background-color: #003203;
   color: #ecf0f1;
   padding: 10px 20px;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 #navbar h1 {
@@ -47,15 +53,19 @@ body {
 
 
 #main-doc {
+  margin-left: 220px; 
   margin-top: 20px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
+
 #author {
   color: #ffffff;
   font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 
@@ -90,7 +100,6 @@ body {
   font-size: 0.95rem;
 }
 
-
 .main-section a {
   color: #3498db;
   text-decoration: none;
@@ -115,6 +124,39 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+ 
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  
+  .main-section {
+    padding: 15px;
+  }
+
+  .main-section header {
+    font-size: 1.25rem;
+  }
+
+  .main-section p {
+    font-size: 0.95rem;
+  }
+
+  .main-section code {
+    font-size: 0.85rem;
+  }
 }
 
 
